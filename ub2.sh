@@ -305,13 +305,13 @@ clear
     echo -e "   .----------------------------------."
 echo -e "   |\e[1;32mPlease Select a Domain Type Below \e[0m|"
 echo -e "   '----------------------------------'"
-echo -e "     \e[1;32m1)\e[0m Enter Your Subdomain"
+echo -e "     \e[1;32m1)\e[0m Enter Your Own Subdomain"
 echo -e "     \e[1;32m2)\e[0m Use a Random Subdomain"
 echo -e "   ------------------------------------"
 read -p "   Please select numbers 1-2 or Any Button(Random) : " host
 echo ""
 if [[ $host == "1" ]]; then
-echo -e "   \e[1;32mPlease Enter Your Subdomain $NC"
+echo -e "   \e[1;32mPlease Enter Your Own Subdomain $NC"
 read -p "   Subdomain: " host1
 echo "IP=" >> /var/lib/kyt/ipvps.conf
 echo $host1 > /etc/xray/domain
@@ -1101,6 +1101,7 @@ echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
 echo -e ""
+# sudo hostnamectl set-hostname $username
 echo -e "${green} Script Successfull Installed"
 echo ""
 read -p "$( echo -e "Press ${YELLOW}[ ${NC}${YELLOW}Enter${NC} ${YELLOW}]${NC} For Reboot") "
