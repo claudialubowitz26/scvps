@@ -30,10 +30,10 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To Tekiro Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To Lumine Project Script Installer ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e "     This Will Quick Setup VPN Server On Your Server"
-echo -e "         Auther : ${green}Tekiro ${NC}${YELLOW}(${NC} ${green}Tekiro Project ${NC}${YELLOW})${NC}"
-echo -e "       © Recode By Tekiro Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "         Auther : ${green}Lumine ${NC}${YELLOW}(${NC} ${green}Lumine Project ${NC}${YELLOW})${NC}"
+echo -e "       © Recode By Lumine Project ${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 5
@@ -358,7 +358,7 @@ function password_default() {
     <code>Domain     :</code> <code>$domain</code>
     <code>Exp Script :</code> <code>$exp</code>
     ============================
-    (C) Copyright 2023 By TekiroVPN
+    (C) Copyright 2023 By LumineVPN
     ============================
 "
 
@@ -1062,7 +1062,7 @@ rm -rf /root/domain
 secs_to_human "$(($(date +%s) - ${start}))"
 echo ""
 echo " "
-echo "=====================-[ TEKIROVPN ]-===================="
+echo "=====================-[ LumineVPN ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
