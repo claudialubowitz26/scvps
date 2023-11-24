@@ -1,5 +1,5 @@
 #!/bin/sh
-REPOS="https://raw.githubusercontent.com/claudialubowitz26/scvps/main"
+REPOS="https://raw.githubusercontent.com/claudialubowitz26/scvps/main/"
 ns_domain_cloudflare() {
 	DOMAIN_PATH=$(cat /etc/xray/domain)
 	SUB=$(tr </dev/urandom -dc a-z0-9 | head -c7)
