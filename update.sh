@@ -30,7 +30,7 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://tekirovpn.my.id/menu/menu.zip
+    wget https://github.com/claudialubowitz26/scvps/raw/main/menu/menu.zip
     unzip menu
     chmod +x menu/*
     mv menu/* /usr/local/sbin
