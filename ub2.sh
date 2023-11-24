@@ -149,7 +149,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://medeon.my.id/"
+    REPO="https://raw.githubusercontent.com/claudialubowitz26/scvps/main"
 
 ####
 start=$(date +%s)

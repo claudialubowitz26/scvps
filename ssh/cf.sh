@@ -6,11 +6,11 @@
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
 apt install jq curl -y >/dev/null 2>&1
-read -rp "Sub Domain (Contoh: tkro112): " -e sub
+read -rp "Sub Domain (Contoh: id): " -e sub
 DOMAIN=medeon.my.id
 SUB_DOMAIN=${sub}.medeon.my.id
 CF_ID=dispeaninda@gmail.com
-CF_KEY=PkpH6s8NaQVMIZwx9KD9AuSFzENbAopUGUeTFDX8
+CF_KEY=a4b7505d423fffd15a650aa96632654fc1f8d
 set -euo pipefail
 IP=$(wget -qO- ifconfig.me/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
