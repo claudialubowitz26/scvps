@@ -1,4 +1,4 @@
-  {
+{
   "log": {
     "loglevel": "warning",
     "error": "/var/log/xray/error.log",
@@ -41,6 +41,7 @@
           "decryption":"none",
             "clients": [
                {
+                 "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
 #vless
              }
           ]
@@ -59,7 +60,8 @@
       "settings": {
             "clients": [
                {
-
+                 "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0",
+                 "alterId": 0
 #vmess
              }
           ]
@@ -79,6 +81,7 @@
           "decryption":"none",
            "clients": [
               {
+                 "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
 #trojanws
               }
           ],
@@ -99,6 +102,7 @@
            "clients": [
            {
            "method": "aes-128-gcm",
+          "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
 #ssws
            }
           ],
@@ -119,6 +123,7 @@
          "decryption":"none",
            "clients": [
              {
+               "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
 #vlessgrpc
              }
           ]
@@ -137,6 +142,8 @@
       "settings": {
             "clients": [
                {
+                 "id": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0",
+                 "alterId": 0
 #vmessgrpc
              }
           ]
@@ -156,6 +163,7 @@
           "decryption":"none",
              "clients": [
                {
+                 "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
 #trojangrpc
                }
            ]
@@ -174,7 +182,8 @@
     "settings": {
         "clients": [
           {
-
+             "method": "aes-128-gcm",
+             "password": "1d1c1d94-6987-4658-a4dc-8821a30fe7e0"
 #ssgrpc 
            }
          ],

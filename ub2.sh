@@ -394,7 +394,7 @@ function install_xray() {
     wget -O /etc/xray/config.json "${REPO}xray/config.json" >/dev/null 2>&1
     #wget -O /usr/local/bin/xray "${REPO}xray/xray.linux.64bit" >/dev/null 2>&1
     wget -O /etc/systemd/system/runn.service "${REPO}xray/runn.service" >/dev/null 2>&1
-    chmod +x /usr/local/bin/xray
+    # chmod +x /usr/local/bin/xray
     domain=$(cat /etc/xray/domain)
     IPVS=$(cat /etc/xray/ipvps)
     print_success "Core Xray Latest Version"
